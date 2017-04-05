@@ -1,6 +1,6 @@
 {
-    "name": "Free Article Finder Test",
-    "description": "When browsing for an article on scholar.google.com this extension will inform the user if it recognizes an article to be free",
+    "name": "Free Article Finder",
+    "description": "When browsing for an article on scholar.google.com this extension will inform the user the chance of an article being free",
     "version": "0.0.1",
     "manifest_version": 2,
     "permissions": [
