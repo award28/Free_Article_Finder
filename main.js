@@ -66,7 +66,7 @@ function injectFreedom(index, chance) {
     var cur = results[index].getElementsByClassName('gs_ri')[0].getElementsByClassName('gs_rt')[0]
     if(chance > 99)
         chance = 99 
-    else if(chance == 0)
+    else if(!chance)
         chance = 1
 
     cur.innerHTML = "<h3 style='color: red; font-size: 20px;'><strong>~" + chance.toFixed(0) + "% chance this article is free~ </strong></h3>" + cur.innerHTML;
