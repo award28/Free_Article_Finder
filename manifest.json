@@ -1,0 +1,30 @@
+{
+    "name": "Free Article Finder Test",
+    "description": "When browsing for an article on scholar.google.com this extension will inform the user if it recognizes an article to be free",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs", 
+        "<all_urls>"
+    ],
+    "content_scripts":[
+        {
+        "matches": [
+            "https://scholar.google.com/*",
+            "http://scholar.google.com/*"
+        ],
+        "js":[
+            "main.js"
+        ],
+        "run_at": "document_end"
+        }
+    ],
+
+    "background": {
+        "scripts": [
+            "eventPage.js"
+        ],
+        "persistent": false
+    },
+    "web_accessible_resources": ["ripple.gif"]
+}
