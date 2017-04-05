@@ -3,6 +3,9 @@
     "description": "When browsing for an article on scholar.google.com this extension will inform the user the chance of an article being free",
     "version": "0.0.1",
     "manifest_version": 2,
+    "icons": {
+        "128": "icon.png"
+    },
     "permissions": [
         "tabs", 
         "<all_urls>"
