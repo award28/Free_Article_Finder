@@ -41,9 +41,7 @@ function checkFreedom(link, index) {
 }
 
 function searchCriteria(site, criteria) {
-    if(site.search(criteria) != -1) 
-        return 1
-    return 0
+    return (site.search(criteria) != -1) ? 1 : 0;
 }
 
 function injectLoad(index) {
